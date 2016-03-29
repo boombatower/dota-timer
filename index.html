@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Dota Timer</title>
+    <link rel='stylesheet prefetch' href='https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css'>
+    <link rel="stylesheet" href="style.css">
+  </head>
+  <body>
+    <div id="main">
+      <fieldset id="settings">
+        <legend>Settings</legend>
+        <p><label>Notification sound - rune
+          <input type="text" id="notification-rune" value="sounds/Oxygen-Im-Sms.ogg"></label></p>
+        <p><label>Notification sound - small camp
+          <input type="text" id="notification-small" value="sounds/Oxygen-Im-Nudge.ogg"></label></p>
+        <p><label>Notification warning - rune
+          <input type="text" id="notification-warning-rune" value="20"></label></p>
+        <p><label>Notification warning - small camp
+          <input type="text" id="notification-warning-small" value="10"></label></p>
+        <p><i>* leave blank for no sound</i></p>
+      </fieldset>
+      <p>
+        <form><label>Set Time <input type="text" id="in"></label></form>
+        <button id="start">Start</button>
+        <button id="stop">Stop</button>
+        <a href="#">settings</a>
+      </p>
+      <p><label>Time <div id="time"></div></label></p>
+      <p><ul id="timers"></ul></p>
+    </div>
+
+    <script src='http://cdnjs.cloudflare.com/ajax/libs/jquery/2.2.2/jquery.min.js'></script>
+    <script src="index.js"></script>
+  </body>
+</html>
